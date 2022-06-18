@@ -1,11 +1,14 @@
+#the name of workflow
 name: "Terraform"
 
+#execute on either commit is pushed to main or on any pull request
 on:
   push:
     branches:
       - main
   pull_request:
 
+#definds the T.job with 8 steps
 jobs:
   terraform:
     name: "Terraform"
